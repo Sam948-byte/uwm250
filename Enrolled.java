@@ -1,5 +1,12 @@
+/*
+Sam Freund
+Section 401
+This program prints out my schedule for the semester.
+ */
+
 public class Enrolled {
     public static void main(String[] args) {
+        
         System.out.println("COMPSCI 250: Introductory Computer Programming (3 credits)");
         System.out.println("402 MoWe 12:30PM - 1:20PM");
         System.out.println("Lapham Hall 160");
