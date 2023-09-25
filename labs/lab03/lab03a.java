@@ -19,6 +19,8 @@ public class lab03a{
         //store temperature in variable
         double fahrenheit = in.nextDouble();
 
+        in.close();
+
         //convert temperature to celsius
         double celsius = (fahrenheit - 32) * 5 / 9;
 
