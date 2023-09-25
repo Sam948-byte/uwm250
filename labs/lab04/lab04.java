@@ -6,11 +6,11 @@ This program takes a users input and calculates the price of pens and notebooks
 
 package lab04;
 
-import java.util.Scanner;
+import utils.FastReader;
 
 public class lab04{
     public static void main(String[] args) {
-        Scanner in = new Scanner(System.in);
+        FastReader in = new FastReader();
 
         //get user input
         System.out.print("Enter the number of pens: ");
@@ -20,8 +20,6 @@ public class lab04{
         System.out.print("Enter the number of notebooks: ");
 
         int notebooks = in.nextInt();
-
-        in.close();
 
         //calculate prices
         double penPrice = pens * 0.50;

@@ -6,20 +6,18 @@ This program converts a temperature in Fahrenheit to Celsius.
 
 package lab03;
 
-import java.util.Scanner;
+import utils.FastReader;
 
 public class lab03a{
     public static void main(String[] args) {
-        //instantiate scanner
-        Scanner in = new Scanner(System.in);
+        //instantiate IO
+        FastReader in = new FastReader();
 
         //prompt user for temperature
         System.out.println("Enter the temperature in Fahrenheit: ");
 
         //store temperature in variable
         double fahrenheit = in.nextDouble();
-
-        in.close();
 
         //convert temperature to celsius
         double celsius = (fahrenheit - 32) * 5 / 9;
