@@ -15,36 +15,21 @@ public class lab05 {
         FastReader in = new FastReader();
 
         //define restaurants
-        String[] restaurants = {"Thai Garden Palace", "Joe's Diner", "Alberto's Tacqueria", "Chez Paris"};
+        String[] restaurants = {"Joe's Diner", "Chez Paris", "Alberto's Tacqueria", "Thai Garden Palace", };
     
         //get spicy
         System.out.println("Do you like it spicy? y/n");
 
-        boolean spicy = (in.next().equals("y")) ? true : false;
+        int spicy = (in.next().equals("y")) ? 1 : 0;
 
         //get fancy
         System.out.println("Do you like it fancy? y/n");
 
-        boolean fancy = (in.next().equals("y")) ? true : false;
+        int fancy = (in.next().equals("y")) ? 1 : 0;
 
         //print out recommendation
-        System.out.println("I recommend you go to " + pickRestaurant(restaurants, spicy, fancy));
+        System.out.println("I recommend you go to " + restaurants[2*spicy + fancy]);
     }
 
-    public static String pickRestaurant(String[] restaurants, boolean spicy, boolean fancy) {
-        String restaurant = "";
-
-        //pick restaurant off bools and restaurants array
-        if (spicy && fancy) {
-            restaurant = restaurants[0];
-        } else if (!spicy && !fancy) {
-            restaurant = restaurants[2];
-        } else if (spicy && !fancy) {
-            restaurant = restaurants[3];
-        } else {
-            restaurant = restaurants[1];
-        }
-
-        return restaurant;
-    }
+   
 }
