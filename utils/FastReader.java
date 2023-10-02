@@ -36,6 +36,8 @@ import java.util.StringTokenizer;
 
 		public float nextFloat() { return Float.parseFloat(next()); }
 
+		public char nextChar() { return next().charAt(0); }
+
 		public double nextDouble()
 		{
 			return Double.parseDouble(next());
