@@ -1,3 +1,9 @@
+/*
+Sam Freund
+Section 401
+This program takes a double literal and checks if it is valid
+ */
+
 import utils.FastReader;
 
 public class DoubleLiteral {
