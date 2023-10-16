@@ -14,14 +14,9 @@ public class DoubleLiteral {
 
         String input = in.next();
 
-        if(input.matches("[+-]?([0-9]+([.][0-9]*)?|[.][0-9]+)")){
-            
-        }
-
         System.out.println(
-        input + " is " + 
-        ((input.matches("[+-]?([0-9]+([.][0-9]*)?|[.][0-9]+)")) ? "" : "not ") + 
-        "a valid (4 character) double literal"
-        );
+                input + " is " +
+                        ((input.matches("[+-]?([0-9]+([.][0-9]*)?|[.][0-9]+)")) ? "" : "not ") +
+                        "a valid (4 character) double literal");
     }
 }

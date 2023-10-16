@@ -6,43 +6,29 @@ This program takes a users input and calculates the price of pens and notebooks
 
 package lab04;
 
-import utils.FastReader;
-
-public class lab04{
+public class lab04 {
     public static void main(String[] args) {
-        FastReader in = new FastReader();
 
-        //get user input
-        System.out.print("Enter the number of pens: ");
+        // get user input
+        int pens = Integer.parseInt(utils.Validator.getValidatedInput("Enter the nuber of pens: ", "\\d+"));
 
-        int pens = in.nextInt();
+        int notebooks = Integer.parseInt(utils.Validator.getValidatedInput("Enter the nuber of notebooks: ", "\\d+"));
 
-        System.out.print("Enter the number of notebooks: ");
-
-        int notebooks = in.nextInt();
-
-        //calculate prices
+        // calculate prices
         double penPrice = pens * 0.50;
 
         double notebookPrice = notebooks * 1.00;
 
         double totalPrice = penPrice + notebookPrice;
 
-        //print out the prices
-        System.out.println("The price of " + pens + " pens is $" + penPrice);
+        // print out the prices
+        System.out.println("The price of " + pens + " pens is $" + penPrice + "\nThe price of " + notebooks
+                + " notebooks is $" + notebookPrice + "\nThe total price is $" + totalPrice);
 
-        System.out.println("The price of " + notebooks + " notebooks is $" + notebookPrice);
+        // calculate tax
+        System.out.println("The tax is $" + totalPrice * 0.055);
 
-        System.out.println("The total price is $" + totalPrice);
-
-        //calculate tax
-        double tax = totalPrice * 0.055;
-
-        System.out.println("The tax is $" + tax);
-
-        //calculate total price with tax
-        double totalPriceWithTax = totalPrice + tax;
-
-        System.out.println("The total price with tax is $" + totalPriceWithTax);
+        // calculate total price with tax
+        System.out.println("The total price with tax is $" + totalPrice * 1.055);
     }
 }

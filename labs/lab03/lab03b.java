@@ -8,21 +8,21 @@ package lab03;
 
 import utils.FastReader;
 
-public class lab03b{
+public class lab03b {
     public static void main(String[] args) {
-        //instantiate IO
+        // instantiate IO
         FastReader in = new FastReader();
 
-        //prompt user for temperature
+        // prompt user for temperature
         System.out.println("Enter the temperature in Celsius: ");
 
-        //store temperature in variable
+        // store temperature in variable
         double celsius = in.nextDouble();
 
-        //convert temperature to celsius
+        // convert temperature to celsius
         double fahrenheit = (celsius * 9 / 5) + 32;
 
-        //print results
+        // print results
         System.out.println(celsius + " degrees Celsius is " + fahrenheit + " degrees Fahrenheit.");
     }
 }
