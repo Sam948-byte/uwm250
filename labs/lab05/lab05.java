@@ -16,10 +16,10 @@ public class lab05 {
 
         // get spicy
 
-        int spicy = (utils.Validator.getValidatedInput("Do you like it spicy? y/n\n", "[yn]")
+        int spicy = (utils.Validator.getValidatedInput("Do you like it spicy? y/n", "[yn]")
                 .equals("y")) ? 1 : 0;
 
-        int fancy = (utils.Validator.getValidatedInput("Do you like it fancy? y/n\n", "[yn]")
+        int fancy = (utils.Validator.getValidatedInput("Do you like it fancy? y/n", "[yn]")
                 .equals("y")) ? 1 : 0;
 
         // print out recommendation
