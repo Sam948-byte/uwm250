@@ -32,15 +32,14 @@ public class DiceGame {
     }
 
     public static String rollDice() {
-        // int[] results = new int[4];
-        int[] results = { 4, 2, 3, 4 };
+        int[] results = new int[4];
 
         System.out.println("Your roll is:");
 
-        // for (int i = 0; i < 4; i++) {
-        //     results[i] = (int) (Math.random() * 4) + 1;
-        //     System.out.print(results[i] + " ");
-        // }
+        for (int i = 0; i < 4; i++) {
+            results[i] = (int) (Math.random() * 4) + 1;
+            System.out.print(results[i] + " ");
+        }
 
         Arrays.sort(results);
 
