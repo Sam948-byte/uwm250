@@ -3,12 +3,12 @@ import java.util.Arrays;
 public class DiceGameTwo {
     private static String[] possibleResults = {"You Lose!", "You Tie!", "You Win!"};
     public static void main(String[] args) {
-        System.out.println("Let's play a dice game.");
+        System.out.println("Welcome to Opponent Dice\n---------------------------------------------------------\nYou will be playing dice against the opponent\nHigh beats low, and same ties\nTriples beat Pairs and Junk\nPairs beat Junk\nIn the case of two identical Pairs - high card decides\nin the case of two Junks - its a tie\n---------------------------------------------------------");
           
         do {
               System.out.println(possibleResults[calculateWinner()]);
-        // } while (utils.Validator.getValidatedInput("Would you like to play again? y/n", "[yn]").equals("y"));
-        }while(true);
+        } while (utils.Validator.getValidatedInput("Would you like to play again? y/n", "[yn]").equals("y"));
+        
     }
 
     // returns true if player wins, false if computer wins
