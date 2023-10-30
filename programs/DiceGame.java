@@ -1,7 +1,7 @@
 /*
 Sam Freund
 Section 401
-This program takes a users numerical input and prints out a pyramid of numbers
+This program rolls a dice and tells the user if it's a pair, triplet, etc.
  */
 
 import java.util.Arrays;
