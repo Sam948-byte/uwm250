@@ -37,7 +37,7 @@ public class DiceGame {
         System.out.println("Your roll is:");
 
         for (int i = 0; i < 4; i++) {
-            results[i] = (int) (Math.random() * 4) + 1;
+            results[i] = utils.RandomGenerator.generate(4, 1);
             System.out.print(results[i] + " ");
         }
 
