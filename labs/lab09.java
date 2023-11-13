@@ -25,7 +25,6 @@ stdIn.close();
 }
 public static double transaction(double bal, double amount)
 {
-// Write your code here ...
-return 0.0; // actual return value here (NOT 0.0)
+return (amount < bal * -1) ? amount : amount + bal;
 }
 }
