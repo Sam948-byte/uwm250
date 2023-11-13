@@ -1,5 +1,6 @@
 //gets and validates input with regex
 package utils;
+
 public class Validator {
 
     /**
@@ -16,6 +17,20 @@ public class Validator {
             System.out.print(prompt);
             input = in.next();
         } while (!input.matches(regex));
+        return input;
+    }
+
+    public static int getValidatedInput(String prompt, int min, int max) {
+        FastReader in = new FastReader();
+        Integer input;
+        do {
+            System.out.print(prompt);
+            try {
+                input = in.nextInt();
+            } catch (Exception e) {
+                input = null;
+            }
+        } while (input != null && input > min && input < max);
         return input;
     }
 }
