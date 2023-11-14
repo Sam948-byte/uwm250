@@ -30,7 +30,7 @@ public class Validator {
             } catch (Exception e) {
                 input = null;
             }
-        } while (input != null && input > min && input < max);
+        } while (input == null || input < min || input > max);
         return input;
     }
 }
