@@ -46,7 +46,7 @@ public class Roulette {
 
             System.out.println("Spinng the wheel ...\nSpin number: " + num + "\nSpin color : " + color);
 
-            adjustBalance(sum * ((win = (bet == num)) ? 1 : -1));
+            adjustBalance(sum * ((win = (bet == num)) ? 35 : -1));
             return win;
         }
     }
