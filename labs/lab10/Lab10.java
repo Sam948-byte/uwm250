@@ -1,5 +1,3 @@
-import utils.FastReader;
-
 public class Lab10 {
     public static void main(String[] args) {
         int[] sized = { -51, -1, 5, 21, 36, 58, 64, 128, 256, 512, 1024};
