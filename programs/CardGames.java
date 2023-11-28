@@ -10,16 +10,16 @@ public class CardGames {
             this.num = num;
         }
 
-        public int cardValue() {
+        public int value() {
             return num % 9 + 1;
         }
 
-        public String cardSuit() {
+        public String suit() {
             return suits[num / 9];
         }
 
-        public void displayCard() {
-            System.out.println(+ cardValue() + " of " + cardSuit() + "s");
+        public void display() {
+            System.out.println(+ value() + " of " + suit() + "s");
         }
     }
 
@@ -28,7 +28,7 @@ public class CardGames {
 
         int n = RandomGenerator.generate(0, 35);
         System.out.println(n + 1);
-        deck[n].displayCard();
+        deck[n].display();
 
         displayDeck(deck);
 
@@ -50,7 +50,7 @@ public class CardGames {
 
     public static void displayDeck(Card[] deck) {
         for (Card card : deck) {
-            card.displayCard();
+            card.display();
         }
     }
 
