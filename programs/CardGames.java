@@ -56,10 +56,11 @@ public class CardGames {
 
     public static void shuffleDeck(Card[] deck, int n) {
         Card temp;
+        int j, k;
 
         for (int i = 0; i < n; i++) {
-            int j = RandomGenerator.generate(0, 35);
-            int k = RandomGenerator.generate(0, 35);
+            j = RandomGenerator.generate(0, 35);
+            k = RandomGenerator.generate(0, 35);
             temp = deck[j];
             deck[j] = deck[k];
             deck[k] = temp;
